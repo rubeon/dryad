@@ -7,6 +7,21 @@ This provides a pre-packaged version of the [DRY][dry] static analysis tool,
 
 ## Usage
 
+The underlying tool `twly`  requires a `.trc` file in the current working
+directory.  A basic `.trc` could look like this:
+
+```json
+
+{
+    "threshold": 95,
+    "ignore": [".git/**/*.*", "**/*~"],
+    "minLines": 4,
+    "minChars": 100
+}
+
+```
+
+
 From the top of your code repository, run:
 
     docker run --rm -v "$(pwd)":/home/app  rubeon/dryad
