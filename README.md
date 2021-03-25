@@ -5,7 +5,7 @@
 This provides a pre-packaged version of the [DRY][dry] static analysis tool,
 [twly][twly].
 
-## Usage
+## Usage
 
 From the top of your code repository, run:
 
